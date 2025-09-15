@@ -1,11 +1,12 @@
-import SignIn from "../pages/auth/signin/SignIn";
-import CartShopping from "../pages/cart-shop/CartShopping";
+import CartShopping from "../pages/CartShopping/CartShopping";
 import Homepage from "../pages/homepages/Homepage";
-import StoreLocator from "../pages/locator-store/StoreLocator";
-import TrackOrder from "../pages/order-tracking/TrackOrder";
-import LoveProducts from "../pages/productLove/LoveProducts";
+import LoveProducts from "../pages/LoveProducts/LoveProducts";
+import SignIn from "../pages/SignIn/SignIn";
+import StoreLocator from "../pages/StoreLocator/StoreLocator";
+import TrackOrder from "../pages/TrackOrder/TrackOrder";
+
 const publicRouter = [
-  {
+   {
     path: "/",
     element:
       <Homepage />
