@@ -39,4 +39,14 @@ const publicRouter = [
   },
 ];
 
-export { publicRouter };
+const adminlayout = [
+  {
+
+  }
+]
+
+const privateRouter = [
+  
+]
+
+export { publicRouter , adminlayout ,privateRouter};
