@@ -2,13 +2,14 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import { adminlayout, privateRouter, publicRouter } from './routes/routes'
 import DefaultLayout from './layouts/DefaultLayout/DefaultLayout'
+import AdminLayout from './layouts/AdminLayout/AdminLayout'
 
 
 function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<AdminLayout />}>
+      <Route path="/admin" element={<AdminLayout />}>
         {adminlayout.map((route, index) => (
             <Route key={index} path={route.path} element={route.element} />
           ))}

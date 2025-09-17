@@ -1,3 +1,5 @@
+import Dashboard from "../layouts/AdminLayout/pages/Dashboard/Dashboard";
+import Staff from "../layouts/AdminLayout/pages/Staff/Staff";
 import CartShopping from "../pages/CartShopping/CartShopping";
 import Homepage from "../pages/homepages/Homepage";
 import LoveProducts from "../pages/LoveProducts/LoveProducts";
@@ -6,7 +8,7 @@ import StoreLocator from "../pages/StoreLocator/StoreLocator";
 import TrackOrder from "../pages/TrackOrder/TrackOrder";
 
 const publicRouter = [
-   {
+  {
     path: "/",
     element:
       <Homepage />
@@ -41,12 +43,20 @@ const publicRouter = [
 
 const adminlayout = [
   {
+    index: true, 
+    element: <Dashboard />
+  },
+  {
+    path: "staff", 
+    element: <Staff />
+  },
+  {
 
   }
 ]
 
 const privateRouter = [
-  
+
 ]
 
-export { publicRouter , adminlayout ,privateRouter};
+export { publicRouter, adminlayout, privateRouter };
